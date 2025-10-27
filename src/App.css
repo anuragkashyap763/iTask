@@ -1,0 +1,90 @@
+
+/*#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Custom scrollbar just for the todos container */
+.todos::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todos::-webkit-scrollbar-track {
+  background: #e9d5ff; /* light violet background */
+  border-radius: 8px;
+}
+
+.todos::-webkit-scrollbar-thumb {
+  background-color: #7c3aed; /* Tailwind's violet-700 */
+  border-radius: 8px;
+}
+
+.todos::-webkit-scrollbar-thumb:hover {
+  background-color: #6d28d9; /* Tailwind's violet-800 on hover */
+}
+
+/* Make the inner text slide to the right on hover */
+.todo-text {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.todo-text::after {
+  content: attr(data-fulltext);
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  transform: translateX(0);
+  transition: transform 4s linear; /* slide speed */
+}
+
+/* When hovered — slide text left to reveal the hidden part */
+.todo-text:hover::after {
+  transform: translateX(calc(-100% + 100px)); /* adjust visible area */
+}
+.todo-text:hover::after {
+  /* Move left by (contentWidth - approxVisibleWidth) */
+  transform: translateX(calc(-100% + 160px));
+}
+

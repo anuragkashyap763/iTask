@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="120" viewBox="0 0 300 120">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5bb5ff"/>
+      <stop offset="50%" stop-color="#79d1c7"/>
+      <stop offset="100%" stop-color="#d2f49f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#d0e7ff" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Checkmark -->
+  <path d="M60 60 L85 85 L130 35 A8 8 0 0 0 118 25 L85 65 L68 50 A8 8 0 0 0 60 60 Z"
+        fill="url(#grad1)" filter="url(#shadow)"/>
+
+  <!-- Text -->
+  <text x="140" y="82" font-family="Poppins, Arial, sans-serif" font-weight="600"
+        font-size="38" fill="url(#grad1)" filter="url(#shadow)">
+    iTask
+  </text>
+</svg>
